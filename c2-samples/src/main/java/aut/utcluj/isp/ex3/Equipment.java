@@ -10,15 +10,30 @@ public class Equipment {
     private boolean taken;
 
     public Equipment(String serialNumber) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        if (serialNumber.isEmpty())
+            throw new UnsupportedOperationException("Not supported yet.");
+        this.name = "NONE";
+        this.serialNumber = serialNumber;
+        this.owner = null;
+        this.taken = false;
     }
 
     public Equipment(String name, String serialNumber) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        if (name.isEmpty() || serialNumber.isEmpty())
+            throw new UnsupportedOperationException("Not supported yet.");
+        this.name = name;
+        this.serialNumber = serialNumber;
+        this.owner = null;
+        this.taken = false;
     }
 
     public Equipment(String name, String serialNumber, String owner) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        if (name.isEmpty() || serialNumber.isEmpty() || owner.isEmpty())
+            throw new UnsupportedOperationException("Not supported yet.");
+        this.name = name;
+        this.serialNumber = serialNumber;
+        this.owner = owner;
+        this.taken = true;
     }
 
     public String getName() {
@@ -44,7 +59,10 @@ public class Equipment {
      * @param owner - owner name
      */
     public void provideEquipmentToUser(final String owner) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        if (owner.isEmpty())
+            throw new UnsupportedOperationException("Not supported yet.");
+        taken = true;
+        this.owner = owner;
     }
 
     /**
@@ -53,6 +71,7 @@ public class Equipment {
      * Remove the owner
      */
     public void returnEquipmentToOffice() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        taken = false;
+        this.owner = null;
     }
 }
