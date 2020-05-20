@@ -1,5 +1,7 @@
 package aut.utcluj.isp.ex3;
 
+import java.util.Objects;
+
 /**
  * @author stefan
  */
@@ -73,5 +75,21 @@ public class Equipment {
     public void returnEquipmentToOffice() {
         taken = false;
         this.owner = null;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Equipment equipment = (Equipment) o;
+        return taken == equipment.taken &&
+                Objects.equals(name, equipment.name) &&
+                Objects.equals(serialNumber, equipment.serialNumber) &&
+                Objects.equals(owner, equipment.owner);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, serialNumber, owner, taken);
     }
 }
