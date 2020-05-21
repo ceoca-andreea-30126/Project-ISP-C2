@@ -3,14 +3,14 @@ package aut.utcluj.isp.ex2;
 /**
  * @author stefan
  */
-public class Notebook extends Equipment{
+public class Notebook extends Equipment {
     private String osVersion;
 
     public Notebook(String name, String serialNumber, String osVersion) {
-        super(name,serialNumber);
-        if(osVersion.isEmpty())
+        super(name, serialNumber);
+        if (osVersion.isEmpty())
             throw new UnsupportedOperationException("Not supported yet.");
-        this.osVersion=osVersion;
+        this.osVersion = osVersion;
     }
 
     public String getOsVersion() {
@@ -18,6 +18,6 @@ public class Notebook extends Equipment{
     }
 
     public String start() {
-        return "Notebook " +super.getName()+" started";
+        return "Notebook " + super.getName() + " started";
     }
 }
