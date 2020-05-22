@@ -1,0 +1,44 @@
+<changelist name="Uncommitted_changes_before_Update_at_22_05_2020_20_17_[Default_Changelist]" date="1590167879991" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2020_20_17_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 22.05.2020 20:17 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/aut/utcluj/isp/ex5/EquipmentHistory.class" />
+    <option name="AFTER_PATH" value="target/classes/aut/utcluj/isp/ex5/EquipmentHistory.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2020_20_17_[Default_Changelist]/EquipmentHistory.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/aut/utcluj/isp/ex2/Notebook.class" />
+    <option name="AFTER_PATH" value="target/classes/aut/utcluj/isp/ex2/Notebook.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2020_20_17_[Default_Changelist]/Notebook.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/aut/utcluj/isp/ex4/EquipmentHistory.class" />
+    <option name="AFTER_PATH" value="target/classes/aut/utcluj/isp/ex4/EquipmentHistory.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2020_20_17_[Default_Changelist]/EquipmentHistory1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/aut/utcluj/isp/ex1/EquipmentTest.class" />
+    <option name="AFTER_PATH" value="target/test-classes/aut/utcluj/isp/ex1/EquipmentTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2020_20_17_[Default_Changelist]/EquipmentTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/aut/utcluj/isp/ex1/Equipment.class" />
+    <option name="AFTER_PATH" value="target/classes/aut/utcluj/isp/ex1/Equipment.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2020_20_17_[Default_Changelist]/Equipment.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/aut/utcluj/isp/ex2/Equipment.class" />
+    <option name="AFTER_PATH" value="target/classes/aut/utcluj/isp/ex2/Equipment.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2020_20_17_[Default_Changelist]/Equipment1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/aut/utcluj/isp/ex4/Equipment.class" />
+    <option name="AFTER_PATH" value="target/classes/aut/utcluj/isp/ex4/Equipment.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2020_20_17_[Default_Changelist]/Equipment2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/aut/utcluj/isp/ex3/EquipmentController.class" />
+    <option name="AFTER_PATH" value="target/classes/aut/utcluj/isp/ex3/EquipmentController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2020_20_17_[Default_Changelist]/EquipmentController.class" />
+  </binary>
+</changelist>
