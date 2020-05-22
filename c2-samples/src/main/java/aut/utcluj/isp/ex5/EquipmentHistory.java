@@ -36,7 +36,7 @@ public class EquipmentHistory implements IEquipmentHistory {
 
     public List<EquipmentHistoryDetails> sortEquipmentHistoryByDateDesc() {
 //        throw new UnsupportedOperationException("Not supported yet.");
-        Collections.reverseOrder(Comparator.comparing(EquipmentHistoryDetails::getDate));
+        historyDetailsList.sort(Collections.reverseOrder(Comparator.comparing(EquipmentHistoryDetails::getDate)));
         return historyDetailsList;
     }
 
