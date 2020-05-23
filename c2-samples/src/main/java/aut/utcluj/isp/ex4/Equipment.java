@@ -1,7 +1,5 @@
 package aut.utcluj.isp.ex4;
 
-//import aut.utcluj.isp.ex5.EquipmentHistory;
-
 import java.time.LocalDateTime;
 
 /**
@@ -15,7 +13,6 @@ public class Equipment {
     private EquipmentHistory equipmentHistory;
 
     public Equipment(String serialNumber) {
-//        throw new UnsupportedOperationException("Not supported yet.");
         this.name = null;
         this.serialNumber = serialNumber;
         this.currentOwner = null;
@@ -66,7 +63,7 @@ public class Equipment {
      * @param providedDate - provided date
      */
     public void provideEquipmentToUser(final String owner, final LocalDateTime providedDate) {
-        if (taken==true)
+        if (taken)
             throw new EquipmentAlreadyProvidedException();
         equipmentHistory.addEquipmentHistory(owner, Operation.PROVIDE, providedDate);
         currentOwner = owner;
@@ -78,7 +75,7 @@ public class Equipment {
      * If equipment is taken, the current user of the equipment should be removed, and taken status should be set to false
      */
     public void returnEquipmentToOffice() {
-        if (taken==false)
+        if (!taken)
             throw new EquipmentNotProvidedException();
         equipmentHistory.addEquipmentHistory(this.currentOwner, Operation.RETURN, LocalDateTime.now());
         taken = false;

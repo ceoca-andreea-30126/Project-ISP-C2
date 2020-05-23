@@ -46,7 +46,7 @@ public class OwnerGui extends JFrame {
         addButton=new JButton("Add");
         addButton.setBounds(150,140,width,height);
         addButton.addActionListener(e -> {
-            controller.addEquipment(new Equipment("None","SN"+ new Random().nextInt(100),ownerText.getText()));
+            controller.addEquipment(new Equipment("Dell","SN"+ new Random().nextInt(100),ownerText.getText()));
             ownerMap=controller.getEquipmentsGroupedByOwner();
             String[] ownerString = new String[ownerMap.size()];
             int i=0;
@@ -80,7 +80,7 @@ public class OwnerGui extends JFrame {
         selectButton.setBounds(180,200,width+50,height+20);
         selectButton.addActionListener(e -> {
             try {
-                new EquipmentGui(controller);
+                new EquipmentGui(controller,listOwners.getSelectedValue());
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             }
