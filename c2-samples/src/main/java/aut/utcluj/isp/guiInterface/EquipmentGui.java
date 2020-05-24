@@ -56,8 +56,8 @@ public class EquipmentGui extends JFrame {
         for (Map.Entry<String, List<Equipment>> stringListEntry : controller.getEquipmentsGroupedByOwner().entrySet()) {
             if (stringListEntry.getKey().equals(owner)) {
                 for (Equipment equipment : stringListEntry.getValue()) {
-                        tableModel.insertRow(tableModel.getRowCount(), new Object[]{equipment.getName(), equipment.getSerialNumber(), equipment.getOwner(),
-                                Operation.PROVIDE, LocalDateTime.now()});
+                    tableModel.insertRow(tableModel.getRowCount(), new Object[]{equipment.getName(), equipment.getSerialNumber(), equipment.getOwner(),
+                            Operation.PROVIDE, LocalDateTime.now()});
                 }
             }
         }
@@ -68,29 +68,29 @@ public class EquipmentGui extends JFrame {
         JButton addEquipment = new JButton("Add Equipment");
         addEquipment.setBounds(50, 270, width + 80, height + 30);
         addEquipment.addActionListener(e -> {
-            String sn="SN" + new Random().nextInt(100);
+            String sn = "SN" + new Random().nextInt(100);
             tableModel.insertRow(tableModel.getRowCount(), new Object[]{nameText.getText(), sn,
                     owner, comboBox1.getItemAt(comboBox1.getSelectedIndex()), LocalDateTime.now()});
-            controller.addEquipment(new Equipment(nameText.getText(),sn,owner));
+            controller.addEquipment(new Equipment(nameText.getText(), sn, owner));
         });
 
-        String[]selectOperation={Operation.RETURN.toString(),Operation.PROVIDE.toString()};
-        comboBox1=new JComboBox<>(selectOperation);
-        comboBox1.setBounds(130,400,width+30,height);
+        String[] selectOperation = {Operation.RETURN.toString(), Operation.PROVIDE.toString()};
+        comboBox1 = new JComboBox<>(selectOperation);
+        comboBox1.setBounds(130, 400, width + 30, height);
 
         JLabel operationLabel = new JLabel("Operation");
-        operationLabel.setBounds(50,400,width,height);
+        operationLabel.setBounds(50, 400, width, height);
 
         JLabel nameLabel = new JLabel("Name");
-        nameLabel.setBounds(50,350,width,height);
+        nameLabel.setBounds(50, 350, width, height);
 
-        nameText=new JTextField();
-        nameText.setBounds(130,350,width+30,height);
+        nameText = new JTextField();
+        nameText.setBounds(130, 350, width + 30, height);
 
         JButton removeEquipment = new JButton("Remove Equipment");
         removeEquipment.setBounds(250, 270, width + 80, height + 30);
         removeEquipment.addActionListener(e -> {
-            controller.removeEquipmentBySerialNumber(table.getValueAt(table.getSelectedRow(),1).toString());
+            controller.removeEquipmentBySerialNumber(table.getValueAt(table.getSelectedRow(), 1).toString());
             tableModel.removeRow(table.getSelectedRow());
         });
 
