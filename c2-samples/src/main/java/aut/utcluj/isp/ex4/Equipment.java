@@ -9,7 +9,7 @@ public class Equipment {
     private String name;
     private String serialNumber;
     private String currentOwner;
-    private boolean taken=false;
+    private boolean taken;
     private EquipmentHistory equipmentHistory;
 
     public Equipment(String serialNumber) {
@@ -21,7 +21,6 @@ public class Equipment {
     }
 
     public Equipment(String name, String serialNumber) {
-//        throw new UnsupportedOperationException("Not supported yet.");
         this.name = name;
         this.serialNumber = serialNumber;
         this.currentOwner = null;
@@ -30,7 +29,6 @@ public class Equipment {
     }
 
     public Equipment(String name, String serialNumber, String owner) {
-//        throw new UnsupportedOperationException("Not supported yet.");
         this.name = name;
         this.serialNumber = serialNumber;
         this.currentOwner = owner;
@@ -40,10 +38,6 @@ public class Equipment {
 
     public String getName() {
         return name;
-    }
-
-    public String getSerialNumber() {
-        return serialNumber;
     }
 
     public String getCurrentOwner() {
